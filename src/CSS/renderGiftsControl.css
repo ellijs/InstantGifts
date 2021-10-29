@@ -1,0 +1,70 @@
+.edit-gift-img {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.brand-gift-img {
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    object-fit: cover;
+}
+.brand-url-span {
+    margin-right: 10px;
+}
+
+.delete-gift-btn {
+    /* display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-right: 5px;
+    justify-content: space-between; */
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+.edit-gift-btn {
+    /* display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-right: 5px;
+    justify-content: space-between; */
+    cursor: pointer;
+}
+
+.gift-section {
+    background-image: linear-gradient( 87deg,  #fd9bb0 10%, #F6416C 100%); 
+    /* background-size: 100% 20%; */
+    background-repeat: no-repeat;
+  
+    
+    /* background-size: cover; */
+}
+
+.menu {
+    background-color: #fff;
+}
+
+div.box.back {
+    background-color: #fff;
+}
+
+div.box.front {
+    border: none
+}
+
+div.text-gift-detail {
+    border:none;
+    border-color: #fff;
+}
+
+.giftSpan {
+    -webkit-text-fill-color: #ff0157;/* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fc8ea8;
+}

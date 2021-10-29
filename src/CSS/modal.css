@@ -1,0 +1,83 @@
+.modal {
+    /* display: none; */
+    /* position: fixed; */
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background: url("https://www.georgjensen.com/on/demandware.static/-/Sites-GeorgJensen_US-Library/default/dw8754f90d/images/content/georgjensen/georgjensen/giftwrapping/1600x600/gifting-occasion-blue-hero-image-1600x6001600.jpg") */
+  }
+
+  .section-modal {
+     background: url("https://ideas.ted.com/wp-content/uploads/sites/3/2018/11/featured_art_gift_istock.jpg") no-repeat;
+     background-size: cover;
+     height: 100%;
+     width: 100%;
+  }
+  
+  .modal-content {
+    margin: 15% auto;
+    width: 60%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+  }
+  
+  .modal-header h2,
+  .modal-footer h3 {
+    margin: 0;
+  }
+  
+  .modal-header {
+    background: var(--modal-color);
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .modal-body {
+    padding: 10px 20px;
+    background: rgb(206, 206, 206);
+  }
+  
+  .modal-footer {
+    background: var(--modal-color);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .close {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    color: #fff;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

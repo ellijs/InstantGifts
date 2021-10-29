@@ -1,0 +1,162 @@
+section {
+    padding: 100px;
+  }
+  
+  /* set temp body attributes wanting to design sticky nav when scroll  
+  body {
+    min-height: 1000px;
+  } */
+  
+  .homepage-banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.indianexpress.com/2020/06/gift-pixa-759-1.jpg') no-repeat;
+    background-size: cover;
+  }
+  
+  .homepage-banner .homepage-content {
+    max-width: 900px;
+    text-align: center;
+  }
+  
+  .homepage-banner .homepage-content h2 {
+    font-size: 5em;
+    color: #fff;
+  }
+  
+  .homepage-banner .homepage-content p {
+    font-size: 1em;
+    color: #fff;
+  }
+  
+  .homepage-btn {
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.2s;
+  }
+  
+  .homepage-btn:hover {
+    letter-spacing: 6px;
+  }
+
+  p.homepage-p {
+      padding: 10px;
+  }
+
+  /* About Us */
+
+.about {
+    background-color: white;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .row .col50 {
+    position: relative;
+    width: 48%;
+  }
+  
+  .titleText {
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+  }
+  
+  .titleText span {
+    color: #ff0157;
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  
+  .row .col50 .imgBx {
+    position: relative;
+    width: 100%;
+    /* min-height: 300px; for about page set up*/ 
+    height: 100%;
+  }
+  
+  .row .col50 .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Menu */
+
+.menu {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .menu .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  
+  .menu .content .box {
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    border-radius: 4px;
+    /* box-shadow: 0 5px 35px rgba(0,0,0,0.08); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .menu .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .menu .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .menu .content .box .text {
+    padding: 15px 0 5px;
+  }
+  
+  .menu .content .box .text h3 {
+    font-weight: 400;
+    color: #111;
+  }
+
+  

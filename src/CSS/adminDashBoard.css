@@ -1,0 +1,480 @@
+/* Googlefont Poppins CDN Link */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} */
+
+/* .admin-dashboard {
+    list-style: none;
+} */
+.navBarBg {
+    height: 130px;
+    background-color: #0A2558;
+}
+
+.admin-sidebar{
+  position: fixed;
+  height: 100%;
+  width: 240px;
+  background: #0A2558;
+  transition: all 0.5s ease;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+.admin-sidebar.admin-active{
+  width: 60px;
+  padding: 50px;
+}
+.admin-sidebar .admin-logo-details{
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.admin-sidebar .admin-logo-details i{
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  min-width: 60px;
+  text-align: center
+}
+.admin-sidebar .admin-logo-details .admin-logo_name{
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+}
+.admin-sidebar .admin-nav-links{
+  margin-top: 50px;
+}
+.admin-sidebar .admin-nav-links li{
+  position: relative;
+  list-style-type: none;
+  text-decoration: none;
+  height: 50px;
+}
+
+.admin-sidebar .admin-nav-links li a{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  list-style-type: none;
+  font-size: 30px;
+}
+
+.admin-links_name {
+  color: #66b0ff;
+  cursor: pointer;
+}
+
+.admin-links_name:hover {
+  color:  #1965f2;
+ 
+}
+
+
+.admin-sidebar .admin-nav-links li a.admin-active{
+  background: #081D45;
+  list-style-type: none;
+  font-size: 30px;
+}
+.admin-sidebar .admin-nav-links li a:hover{
+  background: #081D45;
+  list-style-type: none;
+}
+.admin-sidebar .admin-nav-links li i{
+  min-width: 60px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+.admin-sidebar .admin-nav-links li a .admin-links_name{
+  color: #4183c4;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  list-style: none;
+}
+
+/* span.admin-links_name {
+  color: #4183c4;
+  cursor: pointer;
+}
+
+span.admin-links_name:hover {
+  color: #4183c4;
+} */
+div.admin-box {
+  margin-bottom: 15px;
+}
+
+.admin-sidebar .admin-nav-links .admin-log_out{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.admin-home-section{
+  position: relative;
+  background: #f5f5f5;
+  min-height: 100vh;
+  width: calc(100% - 240px);
+  left: 240px;
+  transition: all 0.5s ease;
+  padding-top: 0;
+}
+.admin-sidebar.active ~ .admin-home-section{
+  width: calc(100% - 60px);
+  left: 60px;
+}
+.admin-home-section nav{
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: calc(100% - 240px);
+  left: 240px;
+  z-index: 100;
+  padding: 0 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+.admin-sidebar.admin-active ~ .admin-home-section nav{
+  left: 60px;
+  width: calc(100% - 60px);
+}
+.admin-home-section nav .admin-sidebar-button{
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+nav .admin-sidebar-button i{
+  font-size: 35px;
+  margin-right: 10px;
+}
+.admin-home-section nav .admin-search-box{
+  position: relative;
+  height: 50px;
+  max-width: 550px;
+  width: 100%;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+}
+nav .admin-search-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  background: #F5F6FA;
+  border: 2px solid #EFEEF1;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 0 15px;
+}
+nav .admin-search-box .admin-box-search{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: #2697FF;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 4px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  transition: all 0.4 ease;
+}
+.admin-home-section nav .admin-profile-details{
+  display: flex;
+  align-items: center;
+  background: #F5F6FA;
+  border: 2px solid #EFEEF1;
+  border-radius: 6px;
+  height: 50px;
+  min-width: 190px;
+  padding: 0 15px 0 2px;
+}
+nav .admin-profile-details img{
+  height: 40px;
+  width: 40px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+nav .admin-profile-details .admin_name{
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin: 0 10px;
+  white-space: nowrap;
+}
+nav .admin-profile-details i{
+  font-size: 25px;
+  color: #333;
+}
+.admin-home-section .admin-home-content{
+  position: relative;
+  padding-top: 104px;
+}
+.admin-home-content .admin-overview-boxes{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  margin-bottom: 26px;
+}
+.admin-box {
+  margin-right: 10px;
+  
+}
+
+.admin-overview-boxes .admin-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 4 - 15px);
+  height: 150%;
+  background: #fff;
+  padding: 15px 14px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.admin-overview-boxes .admin-box-topic{
+  font-size: 20px;
+  font-weight: 500;
+}
+.admin-home-content .admin-box .admin-number{
+  display: inline-block;
+  font-size: 32px;
+  margin-top: 15px;
+  font-weight: 500;
+  margin: 15px 10px;
+  
+}
+
+.admin-home-content .admin-box .admin-indicator{
+  display: flex;
+  align-items: center;
+ 
+}
+.admin-home-content .admin-box .admin-indicator i{
+  height: 25px;
+  width: 25px;
+  top: -10px;
+  background: #8FDACB;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  margin-right: 5px;
+}
+.admin-box .admin-indicator i.admin-down{
+  background: #e87d88;
+}
+.admin-home-content .admin-box .admin-indicator .admin-text{
+  font-size: 12px;
+}
+.admin-home-content .admin-box .admin-cart{
+  display: inline-block;
+  font-size: 32px;
+  height: 50px;
+  width: 50px;
+  background: #cce5ff;
+  line-height: 50px;
+  text-align: center;
+  color: #66b0ff;
+  border-radius: 12px;
+  margin: 0 0 0 6px;
+}
+.admin-home-content .admin-box .admin-cart.two{
+   color: #2BD47D;
+   background: #C0F2D8;
+ }
+.admin-home-content .admin-box .cadmin-art.three{
+   color: #ffc233;
+   background: #ffe8b3;
+ }
+.admin-home-content .admin-box .admin-cart.four{
+   color: #e05260;
+   background: #f7d4d7;
+ }
+.admin-home-content .admin-total-order{
+  font-size: 20px;
+  font-weight: 500;
+}
+.admin-home-content .admin-sales-boxes{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* left box */
+.admin-home-content .admin-sales-boxes .admin-recent-sales{
+  width: 65%;
+  background: #fff;
+  padding: 20px 30px;
+  margin: 0 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.admin-home-content .admin-sales-boxes .admin-sales-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.admin-sales-boxes .admin-box .admin-title{
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.admin-sales-boxes .admin-sales-details li.admin-topic{
+  font-size: 20px;
+  font-weight: 500;
+}
+.admin-sales-boxes .admin-sales-details li{
+  list-style: none;
+  margin: 8px 0;
+}
+.admin-sales-boxes .admin-sales-details li a{
+  font-size: 18px;
+  color: #333;
+  font-size: 400;
+  text-decoration: none;
+}
+.admin-sales-boxes .admin-box .admin-button{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.admin-sales-boxes .admin-box .admin-button a{
+  color: #fff;
+  background: #0A2558;
+  padding: 4px 12px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.admin-sales-boxes .admin-box .admin-button a:hover{
+  background:  #0d3073;
+}
+
+/* Right box */
+.admin-home-content .admin-sales-boxes .admin-top-sales{
+  width: 35%;
+  background: #fff;
+  padding: 20px 30px;
+  margin: 0 20px 0 0;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.admin-sales-boxes .admin-top-sales li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.admin-sales-boxes .admin-top-sales li a img{
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 10px;
+  background: #333;
+}
+.admin-sales-boxes .admin-top-sales li a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.admin-sales-boxes .admin-top-sales li .admin-product,
+.admin-price{
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+}
+/* Responsive Media Query */
+@media (max-width: 1240px) {
+  .admin-sidebar{
+    width: 60px;
+  }
+  .admin-sidebar.active{
+    width: 220px;
+  }
+  .admin-home-section{
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .admin-sidebar.admin-active ~ .admin-home-section{
+    width: calc(100% - 220px);
+    overflow: hidden;
+    left: 220px;
+  }
+  .admin-home-section nav{
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .admin-sidebar.admin-active ~ .admin-home-section nav{
+    width: calc(100% - 220px);
+    left: 220px;
+  }
+}
+@media (max-width: 1150px) {
+  .admin-home-content .admin-sales-boxes{
+    flex-direction: column;
+  }
+  .admin-home-content .admin-sales-boxes .admin-box{
+    width: 100%;
+    overflow-x: scroll;
+    margin-bottom: 30px;
+  }
+  .admin-home-content .admin-sales-boxes .admin-top-sales{
+    margin: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .admin-overview-boxes .admin-box{
+    width: calc(100% / 2 - 15px);
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 700px) {
+  nav .admin-sidebar-button .admin-dashboard,
+  nav .admin-profile-details .admin-admin_name,
+  nav .admin-profile-details i{
+    display: none;
+  }
+  .admin-home-section nav .admin-profile-details{
+    height: 50px;
+    min-width: 40px;
+  }
+  .admin-home-content .admin-sales-boxes .admin-sales-details{
+    width: 560px;
+  }
+}
+
+/* path {
+  bottom: 40px;
+  right: 40px;
+} */
+/* @media (max-width: 550px) {
+  .admin-overview-boxes .admin-box{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .admin-sidebar.admin-active ~ .admin-home-section nav .admin-profile-details{
+    display: none;
+  /* }  */
+/* } */
